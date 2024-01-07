@@ -1,0 +1,15 @@
+<div class="card__container">
+  <div class="card__image">
+    <img src="{{ urlImage }}" alt="" />
+  </div>
+  <div class="card__content">
+    <div class="card__name">
+      <h1>{{ name }}</h1>
+    </div>
+    <div class="card__stats">
+      <span *ngFor="let type of statsTypes" class="card__stats-type">{{
+        type
+      }}</span>
+    </div>
+  </div>
+</div>
