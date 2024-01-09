@@ -48,7 +48,7 @@
 }
 
 /* Types Colors */
-normal {
+.normal {
   background-color: #f4f4f4;
 }
 
@@ -76,6 +76,9 @@ normal {
   background-color: #99b27b;
 }
 
+.psychic {
+  background-color: #d3a3d3;
+}
 .ghost {
   background-color: #95a5c2;
 }
