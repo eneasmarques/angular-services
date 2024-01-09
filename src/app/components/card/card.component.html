@@ -1,15 +1,15 @@
 <div class="card__container">
   <div class="card__image">
-    <img src="{{ urlImage }}" alt="" />
+    <img src="{{ pokemon.sprites.front_default }}" alt="" />
   </div>
   <div class="card__content">
     <div class="card__name">
-      <h1>{{ name }}</h1>
+      <h1>{{ pokemon.name }}</h1>
     </div>
     <div class="card__stats">
-      <span *ngFor="let type of statsTypes" class="card__stats-type">{{
-        type
-      }}</span>
+      <span *ngFor="let t of pokemon.types" class="card__stats-type">
+        {{ t.type.name }}
+      </span>
     </div>
   </div>
 </div>
