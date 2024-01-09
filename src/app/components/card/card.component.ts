@@ -20,7 +20,11 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.service.getPokemon('squirtle').subscribe({
+    this.getPokemon('squirtle');
+  }
+
+  getPokemon(searchName: string) {
+    this.service.getPokemon(searchName).subscribe({
       next: (res) => {
         this.pokemon = {
           id: res.id,
