@@ -13,9 +13,9 @@
 
 .card__image {
   margin: 1.4rem auto 1rem;
-  padding: 1rem;
-  width: 6.5rem;
-  height: 6.5rem;
+  padding: 0.5rem;
+  width: 8rem;
+  height: 8rem;
   background: #f0f0f3;
   box-shadow: 0.25rem 0.094rem 1rem -0.219rem #0000001a;
   border-radius: 50%;
@@ -32,39 +32,94 @@
 
 .card__name h1 {
   font-family: "Poppins", sans-serif;
-
-  color: #000;
-  text-align: center;
-  font-family: Poppins;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: 0.312rem;
+  padding-bottom: 0.5rem;
 }
 
 .card__stats-type {
   font-family: "Montserrat", sans-serif;
   font-size: 0.7rem;
-  line-height: 0.125rem;
   font-weight: 400;
-
   margin-right: 0.5rem;
-
   background: #ffffffbb;
   padding: 0.25rem 0.5rem;
   border-radius: 1rem;
 }
 
-/* <div class="card__container">
-  <div class="card__image">
-    <img src="../../assets/squirlte.png" alt="" />
-  </div>
-  <div class="card__content">
-    <div class="card__name">
-      <h1>Squirlte</h1>
-    </div>
-    <div class="card__stats">
-      <span class="card__stats-type">Aqua</span>
-    </div>
-  </div>
-</div> */
+/* Types Colors */
+normal {
+  background-color: #f4f4f4;
+}
+
+.fighting {
+  background-color: #d76b6b;
+}
+
+.flying {
+  background-color: #d0e1f2;
+}
+
+.poison {
+  background-color: #98d1a3;
+}
+
+.ground {
+  background-color: #c69e6e;
+}
+
+.rock {
+  background-color: #a8a8a8;
+}
+
+.bug {
+  background-color: #99b27b;
+}
+
+.ghost {
+  background-color: #95a5c2;
+}
+
+.steel {
+  background-color: #a8c9d0;
+}
+
+.fire {
+  background-color: #f6b26b;
+}
+
+.water {
+  background-color: #8ac4ff;
+}
+
+.grass {
+  background-color: #8ac257;
+}
+
+.electric {
+  background-color: #e1f598;
+}
+
+.ice {
+  background-color: #c2f0f9;
+}
+
+.dragon {
+  background-color: #a06a7f;
+}
+
+.dark {
+  background-color: #757575;
+}
+
+.fairy {
+  background-color: #f8d1d1;
+}
+
+.unknown {
+  background-color: #b3b3b3;
+}
+
+.shadow {
+  background-color: #606060;
+}

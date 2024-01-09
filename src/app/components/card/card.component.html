@@ -1,4 +1,7 @@
-<div class="card__container">
+<div
+  class="card__container"
+  [ngClass]="pokemon.types.length > 0 ? pokemon.types[0].type.name : ''"
+>
   <div class="card__image">
     <img src="{{ pokemon.sprites.front_default }}" alt="" />
   </div>
