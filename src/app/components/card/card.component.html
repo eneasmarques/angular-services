@@ -1,19 +1,37 @@
-<input type="text" (input)="getPokemon($any($event.target).value)" />
-<div
-  class="card__container"
-  [ngClass]="pokemon.types.length > 0 ? pokemon.types[0].type.name : ''"
->
-  <div class="card__image">
-    <img src="{{ pokemon.sprites.front_default }}" alt="" />
-  </div>
-  <div class="card__content">
-    <div class="card__name">
-      <h1>{{ pokemon.name }}</h1>
+<main class="card">
+  <input
+    class="card__search"
+    type="text"
+    placeholder="Buscar Pokemon"
+    (input)="getPokemon($any($event.target).value)"
+    [ngStyle]="{
+      border:
+        pokemon.types.length > 0
+          ? '.2rem solid var(--color-' + pokemon.types[0].type.name + ')'
+          : ''
+    }"
+  />
+  <div
+    class="card__container"
+    [ngStyle]="{
+      'background-color':
+        pokemon.types.length > 0
+          ? 'var(--color-' + pokemon.types[0].type.name + ')'
+          : ''
+    }"
+  >
+    <div class="card__image">
+      <img src="{{ pokemon.sprites.front_default }}" alt="" />
     </div>
-    <div class="card__stats">
-      <span *ngFor="let t of pokemon.types" class="card__stats-type">
-        {{ t.type.name }}
-      </span>
+    <div class="card__content">
+      <div class="card__name">
+        <h1>{{ pokemon.name }}</h1>
+      </div>
+      <div class="card__stats">
+        <span *ngFor="let t of pokemon.types" class="card__stats-type">
+          {{ t.type.name }}
+        </span>
+      </div>
     </div>
   </div>
-</div>
+</main>
